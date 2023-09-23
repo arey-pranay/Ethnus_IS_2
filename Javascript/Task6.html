@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Login</title>
+  <!-- Include FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      margin-top: 10%;
+    }
+
+    .container {
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #e1e1e1;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #262626;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .input-container {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .input-container i {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      color: #999;
+    }
+
+    .input-container input {
+      width: 75%;
+      padding: 10px 35px 10px 35px;
+      /* Adjusted padding */
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    .button-container button {
+      background-color: #0095f6;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 10px 15px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .remember-me {
+      display: flex;
+      align-items: center;
+    }
+
+    .remember-me input {
+      margin-right: 5px;
+    }
+
+    .sign-up {
+      text-align: center;
+      margin-top: 20px;
+      color: #262626;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1><i>Instagram</i></h1>
+    <form>
+      <div class="input-container">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Username">
+      </div>
+      <div class="input-container">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password">
+      </div>
+      <div class="button-container">
+        <button type="submit">Log In</button>
+      </div>
+      <div class="remember-forgot">
+        <div class="remember-me">
+          <input type="checkbox">
+          <label for="remember">Remember Me</label>
+        </div>
+        <a href="#">Forgot Password?</a>
+      </div>
+    </form>
+  </div>
+  <p class="sign-up">Don't have an account? <a href="#">Sign Up</a></p>
+</body>
+
+</html>
