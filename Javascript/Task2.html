@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Letters</title>
+</head>
+<body>
+    <h1>Sort Letters in Alphabetical Order</h1>
+    <p>Original String: <span id="originalString">Hello World</span></p>
+    <p>Sorted String: <span id="sortedString"></span></p>
+
+    <script>
+        function sortLettersAlphabetically(inputString) {
+            const sortedString = inputString.split('').sort().join('');
+            return sortedString;
+        }
+
+        // Example usage:
+        const originalString = 'Hello World';
+        const sortedString = sortLettersAlphabetically(originalString);
+
+        // Display the original and sorted strings on the page
+        document.getElementById('sortedString').textContent = sortedString;
+    </script>
+</body>
+</html>
